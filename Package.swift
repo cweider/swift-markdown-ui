@@ -32,7 +32,8 @@ let package = Package(
       ],
       swiftSettings: [
         .enableUpcomingFeature("StrictConcurrency"),
-        .enableUpcomingFeature("InferSendableFromCaptures")
+        .enableUpcomingFeature("InferSendableFromCaptures"),
+        .enableUpcomingFeature("DisableOutwardActorInference")
       ]
     ),
     .testTarget(
