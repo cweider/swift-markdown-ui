@@ -31,7 +31,8 @@ let package = Package(
         .product(name: "NetworkImage", package: "NetworkImage"),
       ],
       swiftSettings: [
-        .enableUpcomingFeature("StrictConcurrency")
+        .enableUpcomingFeature("StrictConcurrency"),
+        .enableUpcomingFeature("InferSendableFromCaptures")
       ]
     ),
     .testTarget(
