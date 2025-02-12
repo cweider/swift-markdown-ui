@@ -33,7 +33,8 @@ let package = Package(
       swiftSettings: [
         .enableUpcomingFeature("StrictConcurrency"),
         .enableUpcomingFeature("InferSendableFromCaptures"),
-        .enableUpcomingFeature("DisableOutwardActorInference")
+        .enableUpcomingFeature("DisableOutwardActorInference"),
+        .enableUpcomingFeature("RegionBasedIsolation")
       ]
     ),
     .testTarget(
