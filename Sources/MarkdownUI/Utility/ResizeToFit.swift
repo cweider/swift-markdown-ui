@@ -34,8 +34,8 @@ private struct ResizeToFit1<Content>: View where Content: View {
         .preference(key: SizePreference.self, value: size)
     }
     .frame(width: size?.width, height: size?.height)
-    .onPreferenceChange(SizePreference.self) { size in
-      self.size = size
+    .onPreferenceChange(SizePreference.self) { [$size] size in
+      $size.wrappedValue = size
     }
   }
 
